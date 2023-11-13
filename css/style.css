@@ -1,0 +1,145 @@
+/* GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&family=Kanit:wght@200&family=Roboto:wght@100;300&family=Sedgwick+Ave&display=swap');
+
+/* NORMALIZE */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* VARIABLES */
+:root{
+    /* FUENTES */
+    --fuente-titulos:"Sedgwick Ave display", cursive;
+    --fuente-textos:"Kanit";
+
+    /* COLORES */
+    --colorA:#F8EDE3;
+    --COlorB:#BDD2B6;
+    --COLORC:#A2B29F;
+    --COLORC:#798777;
+}
+
+/* Animaciones */
+@keyframes titulos{
+    0%{
+        transform: scale(1.2);
+    }
+
+}
+
+body{
+    background-size: cover;
+    min-height: 100vh; /* Minima altura */
+
+}
+
+header{
+    background-color:var(--COlorB);
+    color:grey;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.titulos{
+    letter-spacing: 0.5rem;
+    text-align: center;
+    text-shadow: #ff8080 0 0 15px; /* sombreado del titulo */
+    font-family:var(--fuente-titulos);
+
+    animation-name: titulos;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;    
+}
+
+.parrafos{
+    font-size: 2rem;
+    font-family: var(--fuente-textos);
+}
+
+.container div{
+    height: 100px;
+    width: auto;
+    overflow: auto;
+}
+
+.container div:nth-child(1){
+    background-color: var(--colorA);
+    font-size: 1.5rem;
+    height: 30vh;
+    width: 95%;
+    text-align: center;
+    border:double;color:black 5px solid;
+    border-radius: 50px;
+    margin: 0.8%;
+    padding: 12px 10px;
+}
+
+
+.container div:nth-child(3){
+    background-color: var(--COlorB);
+    font-size: 1.5rem;
+    height: 30vh;
+    width: 95%;
+    text-align:center;
+    border:double;color:black 5px solid;
+    border-radius: 50px;
+    margin: 0.8%;
+    padding: 12px 10px;
+}
+
+.container div:nth-child(5){
+    background-color: var(--COLORC);
+    font-size: 1.5rem;
+    height: 30vh;
+    width: 95%;
+    text-align:center;
+    border:double;color:black 5px solid;
+    border-radius: 50px;
+    margin: 0.8%;
+    padding: 12px 10px;
+}
+
+.h2 button{
+    font-size: 30px;
+    color: beige;
+    border-radius: 20px;
+    background-color: #ff8080;
+    margin: 15px;
+    padding: 10px 30px;
+    border: 3px solid #008cba;
+    user-select: none;
+    transition-duration: 2s;
+    position: absolute;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.h3{
+    background-color:yellow;
+    border-bottom: #ff8080;
+}
+
+.circulo{
+    position: fixed;
+    background-color: #ff8080;
+    width: 100px;
+    height: 100px;
+    box-shadow: #BDD2B6;
+}
+
+footer{
+    background-color:#4e7ab8;
+    color: white;
+    padding: 0 10%;
+    font-size: large;
+
+    display: flex;
+    flex-flow: column;
+    font-family: white;
+    row-gap: 50px;
+}
+
+
+
